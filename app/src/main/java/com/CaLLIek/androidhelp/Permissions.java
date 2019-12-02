@@ -1,5 +1,6 @@
 package com.CaLLIek.androidhelp;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
@@ -9,7 +10,7 @@ import androidx.core.app.ActivityCompat;
 
 public class Permissions {
     //массив строк с нужными разрешениями которые нужно запрашивать у пользователя
-    private static final String[] PERMISSIONS = {android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE};
+    private static final String[] PERMISSIONS = {android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
 
     //метод проверки есть ли все разрешения из массива разрешений
     private static boolean hasPermissions(Context context, String... permissions) {

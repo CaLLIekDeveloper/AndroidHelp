@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.CaLLIek.androidhelp.augmentedreality.CameraViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this,FlashLight.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn3 = findViewById(R.id.btn3);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CameraViewActivity.class);
                 startActivity(intent);
             }
         });

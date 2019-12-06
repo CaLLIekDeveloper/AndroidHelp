@@ -10,7 +10,12 @@ import androidx.core.app.ActivityCompat;
 
 public class Permissions {
     //массив строк с нужными разрешениями которые нужно запрашивать у пользователя
-    private static final String[] PERMISSIONS = {android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA};
+    private static final String[] PERMISSIONS = {android.Manifest.permission.READ_EXTERNAL_STORAGE,
+            android.Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.CAMERA,
+            Manifest.permission.ACCESS_FINE_LOCATION,
+            Manifest.permission.ACCESS_COARSE_LOCATION
+    };
 
     //метод проверки есть ли все разрешения из массива разрешений
     private static boolean hasPermissions(Context context, String... permissions) {

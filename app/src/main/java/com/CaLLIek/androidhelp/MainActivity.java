@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.CaLLIek.androidhelp.augmentedreality.CameraViewActivity;
+import com.CaLLIek.androidhelp.wifiscanner.WifiScannerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, CameraViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn4 = findViewById(R.id.btn4);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, WifiScannerActivity.class);
                 startActivity(intent);
             }
         });

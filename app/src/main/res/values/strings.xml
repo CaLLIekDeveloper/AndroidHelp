@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AndroidHelp</string>
     <string name="p_name">AndroidHelp</string>
+    <string name="title_activity_wifi_scanner">WifiScannerActivity</string>
 </resources>

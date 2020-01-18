@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.CaLLIek.androidhelp.augmentedreality.CameraViewActivity;
+import com.CaLLIek.androidhelp.barcodedetection.BarCodeDetection;
 import com.CaLLIek.androidhelp.screanrecorder.RecordActivity;
 import com.CaLLIek.androidhelp.wifiscanner.WifiScannerActivity;
 
@@ -51,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RecordActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btn6 = findViewById(R.id.btn6);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, BarCodeDetection.class);
                 startActivity(intent);
             }
         });

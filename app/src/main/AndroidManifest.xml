@@ -14,10 +14,7 @@
     <!-- WFS -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- WFS -->
-
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -32,7 +29,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".screanrecorder.RecordActivity"></activity>
+        <activity android:name=".barcodedetection.BarCodeDetection"></activity>
+        <activity android:name=".screanrecorder.RecordActivity" />
         <activity
             android:name=".wifiscanner.WifiScannerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
@@ -62,8 +60,7 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyBuqav0plNoQzYlg4u81VGRjtKBUWDy6oI" />
 
-
-        <service android:name="com.CaLLIek.androidhelp.screanrecorder.RecordService"/>
+        <service android:name=".screanrecorder.RecordService" />
     </application>
 
 </manifest>
